@@ -1,0 +1,62 @@
+.tabset {
+	width:90%;
+	font-size:0.9em;
+	margin:2em 0;
+	zoom:1;
+	padding:1px;
+	position:relative;
+}
+
+.tabset dt {
+	float:left;
+	line-height:2;
+	height:2em;
+	background: #DF7A29;
+	color: #fff;
+	border:1px solid #DF7A29;
+	border-bottom:0;
+	padding:0 1em;
+	position:relative;
+	left:0px;
+	margin-right:5px;
+	cursor:pointer;
+	
+	-webkit-border-top-left-radius:10px;
+	-webkit-border-top-right-radius:10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-topright:10px;
+}
+
+.tabset dt:hover {
+	background-color:#fff;
+	color: #000;
+}
+
+.tabset dt.active {
+	border-color:#DF7A29;
+	background:#fff;
+	color: #000;
+	z-index:3;
+	cursor:auto;
+}
+
+.tabset dd {
+	background:#fff;
+	display:none;
+	float:right;
+	width:100%;
+	margin:2em 0 0 -100%;
+	position:relative;
+	z-index:2;
+}
+
+.tabset dd.active{
+	display:block;
+}
+
+.tabset .tab-content {
+	border:1px solid #DF7A29;
+	padding:20px;
+}
+
+* html .clearfix{height:1%;}html[xmlns] .clearfix{display:block;}.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}.clear,.divider{clear:both;}
